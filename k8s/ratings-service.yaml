@@ -1,0 +1,10 @@
+kind: Service
+metadata:
+  name: bookinfo-dev-ratings
+  namespace: student073-bookinfo-dev
+spec:
+  type: ClusterIP
+  ports:
+  - port: 8080
+  selector:
+    app: bookinfo-dev-ratings
